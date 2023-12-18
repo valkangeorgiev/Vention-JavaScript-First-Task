@@ -1,17 +1,12 @@
 
-let personAge = 1;
+let ageOfSimona = 22;
 
-if (studentAge >= 18){
-
-    console.log('The person is an adult.')
+if (ageOfSimona >= 18){
+    console.log('Simona is an adult.')
 }
-
 else if (studentAge < 18 && studentAge > 12) {
-
-    console.log('The person is a teenager.')
+    console.log('Simona is a teenager.')
 } 
-
-else {
-    
-    console.log('The person is a child.')
+else { 
+    console.log('Simona is a child.')
 }
