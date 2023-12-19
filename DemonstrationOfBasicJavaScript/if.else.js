@@ -1,5 +1,5 @@
 
-function SimonaAge() {
+function SimonasAdolescence() {
     
     let ageOfSimona = 23;
 
