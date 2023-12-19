@@ -1,17 +1,15 @@
-let pin = 1909;
 
-for (let i = 1; i <= 4 ; i++) {
-    
-    let guess = prompt("Please make your guess");
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    if(guess == pin){
+function OddNumbers(){
 
-        console.log('That was correct')
-        break;
-    } 
-    else
-    {
-        console.log(`Sorry, that was wrong. Please try again. You have ${i} more tries.`)
-    }
-    
+   for (let i = 0; i < numbers.length; i++) {
+
+        if(numbers[i] % 2 !== 0 ){
+
+            console.log(numbers[i]);
+        }
+   }
+
 }
+
