@@ -1,24 +1,19 @@
 
-class Product{
-      constructor(name, price){
-         this.name = name;
-         this.price = price;
-
+class Animals{
+      constructor(name){
+         this.name = name;     
       }
-
-      showProduct(){
-
-         console.log(`Product: ${this.name}`);
-         console.log(`Price: $${this.price.toFixed(2)}`);
+      run(){
+         console.log(`The animal with the name ${this.name} is running!`);
       }
-
-      calculateDdsTax(){
-         return this.price + (this.price * 0.20)
-      }      
-
+      sleep(){
+         console.log(`The animal with the name ${this.name} is sleeping!`);
+      }  
 }
 
+const animal = new Animals('Johny');
+animal.run();
+animal.sleep();
 
-
-module.exports = Product;
+module.exports = Animals;
 

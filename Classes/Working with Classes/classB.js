@@ -1,25 +1,27 @@
-const Product = require('./classA')
+const Animals = require('./classA')
 
-class Car extends Product{
+class Dog extends Animals{
 
-    constructor(name, price, color ){
-        super (name, price);
-        this.color = color;
-
-
+    constructor(name, breed ){
+        super (name);
+        this.breed = breed;
      }
-
-     paintInBlue(){
-
-       return this.color = 'blue';
+     eat(){
+        console.log(`The ${this.breed} with name: ${this.name} is eating`);
      }
-
-    
-   
+     jump(){
+      console.log(`The ${this.breed} with name: ${this.name} is jumping`);
+     }
 }
 
+const dog = new Dog('Sharo', 'Pitbull');
+dog.run();  //from class A
+dog.leep()  //from class A
+dog.eat();
+dog.jump();
 
 
+module.exports = Dog;
 
 
 
